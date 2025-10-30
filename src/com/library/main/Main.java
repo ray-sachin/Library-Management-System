@@ -66,7 +66,7 @@ public class Main {
                     int uid = sc.nextInt(); sc.nextLine();
                     User issueUser = userService.getUserById(uid);
                     if (issueUser == null) {
-                        System.out.println("❌ User not found!");
+                        System.out.println("User not found!");
                         break;
                     }
 
@@ -81,7 +81,7 @@ public class Main {
                     int rid = sc.nextInt(); sc.nextLine();
                     User returnUser = userService.getUserById(rid);
                     if (returnUser == null) {
-                        System.out.println("❌ User not found!");
+                        System.out.println("User not found!");
                         break;
                     }
 
@@ -89,7 +89,7 @@ public class Main {
                     String returnTitle = sc.nextLine();
                     Book returnBook = bookService.searchBook(returnTitle);
                     if (returnBook == null) {
-                        System.out.println("❌ Book not found!");
+                        System.out.println("Book not found!");
                         break;
                     }
 
@@ -101,11 +101,11 @@ public class Main {
                     break;
 
                 case 0:
-                    System.out.println("👋 Exiting the system... Goodbye!");
+                    System.out.println("Exiting the system... Goodbye!");
                     break;
 
                 default:
-                    System.out.println("⚠️ Invalid choice! Please try again.");
+                    System.out.println("Invalid choice! Please try again.");
             }
         } while (choice != 0);
 
